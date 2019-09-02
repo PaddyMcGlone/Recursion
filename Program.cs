@@ -10,14 +10,16 @@ namespace Recursion
     {
         // My first recursive program
         static int CalculateRecursively(int n, int m)
-        {            
+        {
+            int sum = n;
+
             if(n < m)
             {
                 n++;
-                CalculateRecursively(n, m);
+                return sum += CalculateRecursively(n, m);
             }
 
-            return n;
+            return sum;
         }
 
         static void Main(string[] args)
