@@ -16,6 +16,7 @@ namespace Recursion
             if(n < m)
             {
                 n++;
+                // Add on the result of calling recursively.
                 return sum += CalculateRecursively(n, m);
             }
 
